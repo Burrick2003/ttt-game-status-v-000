@@ -21,7 +21,7 @@ any_return = WIN_COMBINATIONS.any? do |combo|
   board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" ||
     board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
 end
-select_return =  WIN_COMBINATIONS.select do |combo|
+select_return =  WIN_COMBINATIONS.detect do |combo|
     board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" ||
       board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
 end
