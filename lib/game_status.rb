@@ -37,12 +37,7 @@ def full?(board)
 end
 
 def draw?(board)
-  #if
     full?(board) == true && won?(board) == false
-  #  true
-  #else
-  #  false
-  #end
 end
 
 def over?(board)
@@ -51,7 +46,7 @@ end
 
 def winner(board)
   if won?(board) != false
-  win_line = won?(board)
-  board[win_line[0]]
+    win_line = won?(board)
+    board[win_line[0]]
   end
 end
